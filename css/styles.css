@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f6f9;
+}
+
+.login-container {
+    width: 90%;
+    margin: auto;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    margin: 8px 0;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 18px;
+    background: #007bff;
+    color: #333;
+}
+button:hover {
+    background: #0056b3;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #1f2937;
+    color: white;
+    height: 100vh;
+    padding: 15px;
+     transition: 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    background: #f4f6f9;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+    .login-container {
+        width: 60%;
+    }
+}
+@media (min-width: 1024px) {
+    .login-container {
+        width: 400px;
+    }
+}

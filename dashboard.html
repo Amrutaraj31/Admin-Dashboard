@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="layout">
+
+<aside class="sidebar" id="sidebar">
+    <h2>Admin</h2>
+<ul>
+    <li>
+        <a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="roles.html">Roles & Permissions</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+</ul>
+</aside>
+ <div class="main">
+        <header>
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <h1 >Dashboard</h1>
+            <div class="header-icons">
+                🔔 👤
+            </div>
+        </header>
+<div class="stats"> 
+            <div class="card">
+                <h4>Total Users</h4>
+                <p>1200</p>
+            </div>
+            <div class="card">
+                <h4>Active Users</h4>
+                <p>875</p>
+            </div>
+            <div class="card">
+                <h4>Total Orders</h4>
+                <p>540</p>
+            </div>
+            <div class="card">
+                <h4>Revenue</h4>
+                <p>$12,450</p>
+            </div>
+        </div>
+        <div class="table-container">
+            <h3>Recent Activity</h3>
+            <table border="3px">
+                <tr>
+                    <th>User Name</th>
+                    <th>Action</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Created Order</td>
+                    <td>04 Mar 2026</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Amruta</td>
+                    <td>Updated Profile</td>
+                    <td>03 Mar 2026</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+        </div>
+
+</div>
+</div>
+   <script src="js/dashboard.js"></script>
+
+</body>
+</html>
