@@ -35,10 +35,3 @@ It includes:
 HTML
 CSS
 JavaScript
-
-
-
-
-CSS
-
-JavaScript
