@@ -46,10 +46,12 @@ button {
 
 .menu-toggle {
     font-size: 22px;
-    background: none;
+    background: #007bff;
+    color: white;
     border: none;
+    padding: 8px 12px;
     cursor: pointer;
-    margin-right: 10px;
+    border-radius: 4px;
 }
 
 .toggle-btn {
@@ -59,14 +61,18 @@ button {
     background: #007bff;
     color: #333;
 }
-button:hover {
-    background: #0056b3;
-}
 
 .layout {
     display: flex;
 }
-
+.close-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:20px;
+    float:right;
+    cursor:pointer;
+}
 
 .sidebar.collapsed {
     width: 70px;
@@ -145,12 +151,14 @@ table th, table td {
 
 @media (max-width: 768px) {
 
-    #sidebar {
-        left: -220px;
+    .sidebar {
+       left:-220px;
+        position:fixed;
+        z-index:1000;
        
     }
 
-    #sidebar.active {
+    .sidebar.active {
         left: 0;
     }
 
