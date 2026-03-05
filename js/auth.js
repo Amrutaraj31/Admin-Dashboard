@@ -25,12 +25,11 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     alert("Redirecting...");
     window.location.href = "dashboard.html";
 });
-
 function forgotPassword(){
 
-    let email = prompt("Enter your registered email");
+    let email = prompt("Enter your registered email:");
 
-    if(email === null || email.trim() === ""){
+    if(!email){
         alert("Please enter your email");
         return;
     }
@@ -44,4 +43,3 @@ function forgotPassword(){
 
     alert("Password reset link sent to " + email);
 }
-
