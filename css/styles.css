@@ -125,3 +125,76 @@ table th,table td{
     }
 
 }
+
+
+/* LOGIN PAGE */
+
+.login-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f4f6f9;
+}
+
+.login-container{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:90%;
+max-width:350px;
+}
+
+.login-container h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.login-container label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+.login-container input{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+.login-container button{
+width:100%;
+margin-top:15px;
+padding:10px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+.login-container button:hover{
+background:#0056b3;
+}
+
+.remember{
+display:flex;
+align-items:center;
+gap:6px;
+margin-top:10px;
+}
+
+.forgot{
+display:block;
+text-align:center;
+margin-top:15px;
+text-decoration:none;
+color:#007bff;
+}
+
+.forgot:hover{
+text-decoration:underline;
+}
