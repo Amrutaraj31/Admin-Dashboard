@@ -25,3 +25,23 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     alert("Redirecting...");
     window.location.href = "dashboard.html";
 });
+
+function forgotPassword(){
+
+    let email = prompt("Enter your registered email");
+
+    if(email === null || email.trim() === ""){
+        alert("Please enter your email");
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailPattern.test(email)){
+        alert("Invalid email format");
+        return;
+    }
+
+    alert("Password reset link sent to " + email);
+}
+
