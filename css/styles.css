@@ -183,19 +183,27 @@ background:#0056b3;
 }
 
 .remember{
-display:flex;
-align-items:center;
-gap:6px;
-margin:10px 0;
-font-size:14px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin:10px 0;
+    font-size:14px;
 }
 
-
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
 
 input[type="checkbox"]{
-width:auto;
-margin:0;
-padding:0;
+    width:auto;
+    margin:0;
 }
 
 
