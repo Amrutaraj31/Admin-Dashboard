@@ -187,11 +187,16 @@ display:flex;
 align-items:center;
 gap:6px;
 margin:10px 0;
+font-size:14px;
 }
 
 
 
-
+input[type="checkbox"]{
+width:auto;
+margin:0;
+padding:0;
+}
 
 
 .forgot{
