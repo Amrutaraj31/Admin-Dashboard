@@ -59,6 +59,15 @@ header{
     color:white;
 }
 
+.sidebar .nav-link{
+padding:10px 15px;
+display:block;
+}
+
+.sidebar .nav-link:hover{
+background:#343a40;
+}
+
 /* ---------- OFFCANVAS SIDEBAR ---------- */
 
 .offcanvas{
